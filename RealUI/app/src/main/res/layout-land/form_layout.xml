@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <TextView
+            android:text="Please submit your details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginTop="46dp"
+            android:id="@+id/editText"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:hint="Name" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="46dp"
+            android:hint="E-mail" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_below="@+id/editText2"
+            android:layout_alignEnd="@+id/editText2"
+            android:layout_marginTop="19dp"
+            android:id="@+id/editText3"
+            android:hint="password" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp"
+            android:id="@+id/editText4"
+            android:hint="Confirm Password" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView2"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:text="Unless otherwise stated, the services featured on this website of any downloads, programs and text avaliable through this site. Redistribution or republication of any part of this site or its content is prohibited, including such by framing or other similar or any means without the express written consent of the  Company. The company does not warrant that the service fro this site will be uninterrupted, timely or error free, although it is provided to the best ability. By using this service your hereby indemnify this Company, its employees, agents and affiliates against any loss or damage, in whatever manner; however caused."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView34"
+            android:layout_marginTop="46dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Terms and Conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView37"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp"
+            android:textStyle="normal|bold"
+            android:textSize="40sp" />
+
+        <CheckBox
+            android:text="I agree"
+            android:layout_width="wrap_content"
+            android:id="@+id/checkBox"
+            android:layout_marginTop="44dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView34"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Can't wait! Sign me up!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="85dp"
+            android:layout_below="@+id/checkBox"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>
