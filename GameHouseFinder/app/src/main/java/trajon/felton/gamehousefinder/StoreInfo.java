@@ -90,7 +90,7 @@ public class StoreInfo extends AppCompatActivity {
             BufferedReader buffreader;
             JSONArray obj = null;
             try {
-                url = new URL("http://192.168.0.100/dashboard/eventQuery362.php");
+                url = new URL("http://107.184.164.127:8040/eventQuery362.php");
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 phpReturn = urlConnection.getInputStream();
                 buffreader = new BufferedReader(new InputStreamReader(phpReturn));
